@@ -1,0 +1,79 @@
+@import '../../assets/styles/_variables.scss';
+
+.slider {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    overflow: hidden;
+    background-color: $secondary-color;
+    position: relative;
+
+    &_plum {
+      position: absolute;
+      right: 70%;
+      left: 0%;
+      top: 28%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__container {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+
+      &__title{
+        margin-left: 30px;
+        color: white;
+        font-size: 38px;
+        font-weight: 700;
+      }
+
+      &__block {
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex !important;
+  
+        &_text {
+          color: white;
+          margin-left: 80px;
+
+          &_h1{
+            font-size: 24px;
+            font-weight: 600;
+          }
+
+          &_h2{
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 35px;
+            max-width: 360px;
+          }
+
+          &_btn{
+            border: 2px solid orange;
+            margin-top: 45px;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 13px 21px 13px 21px;
+            background-color: rgba($color: $primary-color, $alpha: 0.85);
+            transition: all 0.3s ease;
+            border-radius: 15px;
+
+            &:hover {
+                font-size: 19px;
+                padding: 15px 23px 15px 23px;
+                background-color: rgba($color: $primary-color, $alpha: 1.0);
+            }
+          }
+        }
+  
+        &_img {
+          max-width: 320px;
+          margin-right: 80px;
+        }
+      }
+    }
+  }
+  

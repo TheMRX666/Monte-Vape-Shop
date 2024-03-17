@@ -1,0 +1,38 @@
+@import './_variables';
+
+.Accessories{
+    &__category{
+        padding: 30px 0 30px 0;
+        background-color: $secondary-color;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+
+        &__select{
+            margin-right: 60px;
+            appearance: none;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 150px;
+            outline: none;
+            position: relative;            
+
+            &:hover {
+                border-color: #999;
+            }
+
+            &:focus {
+                box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+            }
+
+            &__option{
+                padding: 8px 12px;
+            }
+        }
+    }
+}

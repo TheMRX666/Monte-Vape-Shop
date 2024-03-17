@@ -1,0 +1,76 @@
+@import '../../assets/styles/_variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    background-color: whitesmoke;
+    position: relative;
+
+    &__nav{
+        display: flex;
+        width: 900px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo{
+            font-size: 26px;
+            color: $primary-color;
+            cursor: pointer;
+            padding-right: 25px;
+
+            &_span {
+                font-size: 18px;
+            }
+        }
+
+        &__pages{
+            font-size: 20px;
+            color: $primary-color;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                color: $secondary-color;
+                font-size: 21px;
+            }
+        }
+    }
+
+    &__auth{
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+        align-items: center;
+
+        &__btn{
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 13px 10px 13px;
+            background-color: rgba($color: $secondary-color, $alpha: 0.8);
+            transition: all 0.3s ease;
+            border-radius: 12px;
+
+            &:hover {
+                font-size: 19px;
+                padding: 7px 15px 7px 15px;
+                background-color: rgba($color: $secondary-color, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__cart{
+        width: 360px;
+        height: 320px;
+        overflow-y: auto;
+        position: absolute;
+        top: 100%;
+        left: 73%;
+        background-color: white;
+        box-shadow: 5px 5px 10px rgba($color: black, $alpha: 0.6);
+        z-index: 2;
+    }
+
+}

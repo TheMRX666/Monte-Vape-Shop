@@ -1,0 +1,55 @@
+@import './_variables';
+
+.Auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+   
+    &__form{
+        background-color: white;
+        margin: 30px 0 30px 0;
+        box-shadow: 5px 5px 10px rgba(black, 0.3);
+        width: 400px;
+        height: 500px;    
+        text-align: center;
+        border-radius: 10px;
+
+        &__title{
+            margin: 60px 0 65px 0;
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        &__inputContainer{
+            margin-bottom: 20px;
+        }
+
+        &__input{
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        &__btn{
+            margin-top: 25px;
+            width: 60%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        &_btn:hover{
+            background-color: #0056b3;
+        }
+    }
+}

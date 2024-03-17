@@ -1,0 +1,89 @@
+.PlaceAnOrder{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    align-items: center;
+
+    &__container{
+        background-color: white;
+        width: 780px;
+        min-height: 535px;
+        padding: 40px 40px 40px 40px;
+
+        &__title{
+            font-size: 32px;
+        }
+
+        &__items{
+            margin-top: 40px;
+            max-height: 180px;
+            overflow-y: auto;
+            max-width: 500px;
+            margin-bottom: 20px;
+
+            &__item{
+                display: flex;
+            }
+        }
+
+        &__inputContainer{
+            margin-bottom: 20px;
+        }
+
+        &__input{
+            width: 65%;
+            padding: 11px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        &__select{
+            margin-bottom: 25px;
+            margin-right: 60px;
+            appearance: none;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 150px;
+            outline: none;
+            position: relative;            
+
+            &:hover {
+                border-color: #999;
+            }
+
+            &:focus {
+                box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+            }
+
+            &__option{
+                padding: 8px 12px;
+            }
+        }
+
+        &__compleate{
+            display: flex;
+            margin-top: 20px;
+
+            &__total{
+                font-size: 25px;
+                margin-top: 9px;
+            }
+
+            &__btn{
+                font-size: 18px;
+                color: white;
+                border: 1px solid orange;
+                border-radius: 15px;
+                margin-left: 220px;
+                padding: 12px 16px 12px 16px;
+                background-color: black;
+            }
+        }
+    }
+}
